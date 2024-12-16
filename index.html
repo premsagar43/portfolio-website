@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREM SAGAR Portfolio Website </title>
+    <link rel="stylesheet" href="styles.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                    <div class="logo-text">Prem Sagar</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="PremsagarCV0.pdf">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="https://t.ly/lzxWw">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="sagar.png.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>PREM SAGAR</h1>
+                    <p>my name is Prem sagar, and I'm a student of rku. I have completed my 5 semester in diploma computer engineering. And I also gained so many experiences in it, like I'm good in html, css and javascript in the field of web development. i learned basics of android development. But I want to choose web development as my option.  Besides academic I good in cricket, video games and dancing these are my best hobbies to say.
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="PremsagarCV0.pdf" class="btn active">Download CV</a>
+                       <a href="https://t.ly/lzxWw" class="btn active">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://t.ly/fYLN0"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://t.ly/SE34y"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://t.ly/vQvWL"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
